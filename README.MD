@@ -40,6 +40,8 @@ def identify_big_cat(img_path:str)->str:
  print(f"Predicted species: {our_big_cat}" )
 ```
 
+**Inference Notebook**: [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/smaranjitghose/Big_Cat_Classifier/blob/master/notebooks/Big_Cat_Classifier_Inference.ipynb)
+
 ## Reference and Acknowledgement:
 
 [Hugging Pics](https://github.com/nateraw/huggingpics)
