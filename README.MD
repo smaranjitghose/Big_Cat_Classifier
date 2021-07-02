@@ -1,4 +1,4 @@
-# Big Cat Classifier 🐯
+<p align = "center"><img src = "./assets/banner_img.png"></p>
 
 An image classifier built using Vision Transformers that categories images of the big cats into the following classes:
 
@@ -14,6 +14,12 @@ An image classifier built using Vision Transformers that categories images of th
 > - Theoretically the model should be able to accurately identify geographical population variants of each species. However, in practical scenarios this may not be true as during the training phases this was not kept in mind while collecting the dataset.
 >   - For example: images of Bengal Tigers, Siberian Tigers, Indochinese Tigers, and Malayan Tigers should be identified as Tigers
 > - Lastly, the performance of the model in categorizing certain rare variants in the populations of big cats such as white tigers, snow leopards, or black panther has not been determined exclusively. Although some of the tests performed gave satisfactory results.
+
+### Training and Inference
+
+**Training**: [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/smaranjitghose/Big_Cat_Classifier/blob/master/notebooks/Big_Cat_Classifier.ipynb)
+
+**Inference**: [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/smaranjitghose/Big_Cat_Classifier/blob/master/notebooks/Big_Cat_Classifier_Inference.ipynb)
 
 ## Usage
 
@@ -40,7 +46,9 @@ def identify_big_cat(img_path:str)->str:
  print(f"Predicted species: {our_big_cat}" )
 ```
 
-**Inference Notebook**: [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/smaranjitghose/Big_Cat_Classifier/blob/master/notebooks/Big_Cat_Classifier_Inference.ipynb)
+## Hosted API:
+
+Check it out [here](https://huggingface.co/smaranjitghose/big-cat-classifier)
 
 ## Reference and Acknowledgement:
 
