@@ -2,7 +2,7 @@
 FROM python:3.8-slim-buster
 
 #Expose port 8080
-EXPOSE 8080
+# EXPOSE 8080
 
 #Copy Requirements.txt file into app directory
 COPY requirements.txt app/requirements.txt
@@ -16,7 +16,8 @@ COPY . /app
 #Change Working Directory to app directory
 WORKDIR /app
 
-#Run the application on port 8080
-ENTRYPOINT ["streamlit", "run", "app.py", "--server.port=8080", "--server.address=0.0.0.0"]
+# #Run the application on port 8080
+# ENTRYPOINT ["streamlit", "run", "app.py", "--server.port=8080", "--server.address=0.0.0.0"]
 
-
+# Heroku Startup
+ENTRYPOINT ["streamlit", "run", "app.py", "--server.port=$PORT"]

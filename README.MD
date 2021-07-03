@@ -108,6 +108,37 @@ docker run -t -i -p 8080:8080 --name "big-cat-classifier" smaranjitghose/big-cat
 
 ![Streamlit App](./assets/streamlit_app.png)
 
+## Hosting
+
+1. Heroku
+
+- Remove the lines that exposed the particular port in the docker container
+- Make sure the startup command is exposed with a variable Port Number
+
+```
+ENTRYPOINT ["streamlit", "run", "app.py", "--server.port=$PORT"]
+```
+
+- Login to Heroku
+
+```
+heroku login -i
+```
+
+- Create a new Heroku app
+
+```
+heroku create
+```
+
+- Login in to Container Registry
+
+```
+heroku container:login
+```
+
+-
+
 ## Reference and Acknowledgement:
 
 [Hugging Pics](https://github.com/nateraw/huggingpics)
