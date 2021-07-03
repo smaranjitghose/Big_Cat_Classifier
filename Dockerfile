@@ -16,8 +16,8 @@ COPY . /app
 #Change Working Directory to app directory
 WORKDIR /app
 
-# #Run the application on port 8080
-# ENTRYPOINT ["streamlit", "run", "app.py", "--server.port=8080", "--server.address=0.0.0.0"]
+# Run the application on port 8080 for Local Host or GCP
+# ENTRYPOINT ["streamlit", "run", "app.py", "--server.port 8080", "--server.address 0.0.0.0"]
 
-# Heroku Startup
-ENTRYPOINT ["streamlit", "run", "app.py", "--server.port=$PORT"]
+# Heroku Startup Command
+CMD streamlit run app.py --server.port $PORT

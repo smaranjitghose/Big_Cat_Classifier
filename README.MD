@@ -137,7 +137,23 @@ heroku create
 heroku container:login
 ```
 
--
+- Build the Docker image and push it to Container Registry
+
+```
+heroku container:push web
+```
+
+- Release the app
+
+```
+heroku container:release web
+```
+
+- Check the hosted version and dashboard
+
+```
+heroku open
+```
 
 ## Reference and Acknowledgement:
 
