@@ -7,7 +7,6 @@ from src import big_cat_classifier
 
 
 def main():
-    # Metadata for the web app
     st.set_page_config(
         page_title="Big Cat Classifier",
         layout="centered",
@@ -41,8 +40,6 @@ def main():
         else:
             st.error("Can you please upload an image 🙇🏽‍♂️")
 
-
-# big_cat_classifier.classifier()
 
 if __name__ == "__main__":
     main()
