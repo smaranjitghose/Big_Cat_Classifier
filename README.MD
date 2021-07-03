@@ -66,7 +66,9 @@ cd Big_Cat_Classifier
 
 - Now follow either of following two routes:
 
-A) Without using Docker [Python3 is required]:
+A) Without using Docker:
+
+**Make sure you have installed the latest stable version [Python 3](https://www.python.org/downloads/) and added it to PATH**
 
 - Install the python dependencies
 
@@ -80,9 +82,9 @@ pip install -r requirements.txt
 streamlit run app.py
 ```
 
-B) Using Docker [Python3 is not required]:
+B) Using Docker:
 
-**Make sure you have installed Docker**
+**Make sure you have installed [Docker](https://docs.docker.com/engine/install/)**
 
 - Build the Docker Image
 
