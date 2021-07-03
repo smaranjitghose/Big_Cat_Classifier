@@ -50,6 +50,62 @@ def identify_big_cat(img_path:str)->str:
 
 Check it out [here](https://huggingface.co/smaranjitghose/big-cat-classifier)
 
+## Library App Usage:
+
+- Clone this repository
+
+```
+git clone https://github.com/smaranjitghose/Big_Cat_Classifier.git
+```
+
+- Move inside the cloned repository
+
+```
+cd Big_Cat_Classifier
+```
+
+- Now follow either of following two routes:
+
+A) Without using Docker [Python3 is required]:
+
+- Install the python dependencies
+
+```
+pip install -r requirements.txt
+```
+
+- Start the streamlit app on local server
+
+```
+streamlit run app.py
+```
+
+B) Using Docker [Python3 is not required]:
+
+**Make sure you have installed Docker**
+
+- Build the Docker Image
+
+```
+docker build -t smaranjitghose/big-cat-classifier:latest .
+```
+
+- Check if the image is available
+
+```
+docker images
+```
+
+- Create a Docker container from the image and Run it
+
+```
+docker run -t -i -p 8080:8080 --name "big-cat-classifier" smaranjitghose/big-cat-classifier
+```
+
+- Open your browser and visit `localhost:8080`
+
+![Streamlit App](./assets/streamlit_app.png)
+
 ## Reference and Acknowledgement:
 
 [Hugging Pics](https://github.com/nateraw/huggingpics)
